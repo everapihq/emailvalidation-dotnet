@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <PackageId>Emailvalidationio</PackageId>
+    <Version>1.0.1</Version>
+    <Authors>Dominik Kukacka</Authors>
+    <Company>Everapi GmbH</Company>
+    <PackageTags>Email;Validation;Api;Email validator;Email checker</PackageTags>
+    <Title>Emailvalidation Api</Title>
+    <Description>
+      This client library enables working with the Emailvalidation API - https://emailvalidation.io/
+      Register here for an Apikey to use the API - https://app.emailvalidation.io/register
+      See Github repository here - https://github.com/everapihq/emailvalion-dotnet
+    </Description>
+    <Summary>This is the official NuGet package for emailvalidation API.(https://emailvalidation.io/)</Summary>
+    <Copyright>Copyright © Everapi GmbH 2023</Copyright>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageIcon>emailvalidation-icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://emailvalidation.io/</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl> 
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Nullable>enable</Nullable>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="**\*.orig" />
+    <None Include="..\LICENSE.md" Pack="true" PackagePath="LICENSE.md" />
+    <None Include="..\emailvalidation.png" Pack="true" PackagePath="emailvalidation.png" />
+    <None Include="..\emailvalidation-icon.png" Pack="true" PackagePath="emailvalidation-icon.png" />
+    <None Include="..\README.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Helpers\" />
+    <None Remove="Newtonsoft.Json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+</Project>
